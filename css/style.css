@@ -1,0 +1,74 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Rubik-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Rubik-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Rubik-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Rubik-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* utility */
+
+body {
+    background-color: #f0f1f5 !important;
+    font-family: 'Rubik'!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #30363A;
+    border-radius: 10px;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    background-color: #EDF1F4;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+
+
+/* style */
+
+.time {
+    background-color: #EDF1F4;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #babebc;
+    border-radius: 10px;
+    color: #080A0C;
+    font-weight: bold;
+}
+
+span {
+    color: #CFD2DA;
+}
+
+.btn {
+    border-radius: 15px;
+    background-color: #EDF1F4;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 8px #babebc;
+    transition: all 0.3s;
+}
+
+.btn:focus {
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 8px #babebc;
+    color: #080A0C;
+}
+
+.btn:disabled {
+    opacity: 1;
+    box-shadow: inset 2px 2px 6px #babebc, inset -2px -2px 10px #ffffff;
+    color: #C8CAD5;
+}
